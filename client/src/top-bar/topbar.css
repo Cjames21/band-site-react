@@ -16,7 +16,7 @@ body .top-bar, .top-bar ul {
     margin-right: 60px;
 }
 
-.top-bar li a, .mobile-nav-bar li a {
+.top-bar li, .mobile-nav-bar li {
     color: #121212;
     font-family: body-content;
     font-size: 1.2em;
@@ -25,10 +25,6 @@ body .top-bar, .top-bar ul {
 
 .mobile-nav-bar {
     margin-top: 15px;
-}
-
-.mobile-nav-bar li a:hover {
-    text-decoration: underline;
 }
 
 .top-bar li:hover {

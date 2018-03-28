@@ -8,11 +8,13 @@ export default class App extends React.Component {
   constructor() {
     super();
 
+    // Setting and checking the current page, delete the log once this project is finished
     const currentPage = sessionStorage.getItem("currentPage");
-    console.log(currentPage);
 
+    // Bind any functions that this component holds to the instance that it is in
     this.handlePageChange = this.handlePageChange.bind(this);
 
+    // Re-render page if page chosen is different from currentPage
     if(currentPage) {
        this.state = {page: currentPage};
      } else {
@@ -30,41 +32,45 @@ export default class App extends React.Component {
     });
   }
 
+
+
+  jsonModels = require('./json-models.json');
+
   render() {
     if(this.state.page === "index") {
       return (
         <div className="index">
-          <TopBar onPageChange={this.handlePageChange} />
+          <TopBar onPageChange={this.handlePageChange} topbarLinks={this.jsonModels.topbar} />
         </div>
       );
     } else if(this.state.page === "about") {
       return (
         <div className="index">
-          <TopBar onPageChange={this.handlePageChange} />
+          <TopBar onPageChange={this.handlePageChange} topbarLinks={this.jsonModels.topbar} />
         </div>
       );
     } else if(this.state.page === "music") {
       return (
         <div className="index">
-          <TopBar onPageChange={this.handlePageChange} />
+          <TopBar onPageChange={this.handlePageChange} topbarLinks={this.jsonModels.topbar} />
         </div>
       );
     } else if(this.state.page === "photos") {
       return (
         <div className="index">
-          <TopBar onPageChange={this.handlePageChange} />
+          <TopBar onPageChange={this.handlePageChange} topbarLinks={this.jsonModels.topbar} />
         </div>
       );
     } else if(this.state.page === "store") {
       return (
         <div className="index">
-          <TopBar onPageChange={this.handlePageChange} />
+          <TopBar onPageChange={this.handlePageChange} topbarLinks={this.jsonModels.topbar} />
         </div>
       );
     } else if(this.state.page === "contact") {
       return (
         <div className="index">
-          <TopBar onPageChange={this.handlePageChange} />
+          <TopBar onPageChange={this.handlePageChange} topbarLinks={this.jsonModels.topbar} />
         </div>
       );
     } else {

@@ -1,10 +1,14 @@
 {
   "topbar": [
-    "",
+    "HOME",
+    "ABOUT",
+    "MUSIC",
+    "PHOTOS",
+    "STORE",
+    "CONTACT"
   ],
-  "centerfold": [
-    "",
-    "",
-  ],
-    
+  "centerfold": {
+    "headline": "Ghosts are Calling Out",
+    "subline": "THE NEW ALBUM OUT FROM DEAD 27S"
+  }
 }
