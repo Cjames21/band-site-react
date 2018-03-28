@@ -1,0 +1,44 @@
+/* Top Bar styles */
+body .top-bar {
+  width: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 50px;
+  margin-top: 10px;
+  border-bottom: 1px solid black;
+}
+
+body .top-bar, .top-bar ul {
+    background-color: transparent !important;
+}
+
+.top-bar ul li {
+    margin-right: 60px;
+}
+
+.top-bar li a, .mobile-nav-bar li a {
+    color: #121212;
+    font-family: body-content;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.mobile-nav-bar {
+    margin-top: 15px;
+}
+
+.mobile-nav-bar li a:hover {
+    text-decoration: underline;
+}
+
+.top-bar li:hover {
+    text-decoration: underline;
+}
+
+.top-bar .top-bar-left:hover {
+  cursor: pointer;
+}
+
+.top-bar .top-bar-left h4 {
+    padding-top: 5px;
+}

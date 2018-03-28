@@ -1,0 +1,21 @@
+{
+  "name": "index",
+  "version": "1.0.0",
+  "description": "Home page template for a band website",
+  "main": "index.js",
+  "scripts": {
+    "test": "/test_index_js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "band-page"
+  },
+  "keywords": [
+    "band",
+    "page",
+    "home",
+    "index"
+  ],
+  "author": "Charles James",
+  "license": "ISC"
+}
