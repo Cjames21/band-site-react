@@ -5,9 +5,12 @@ import './home.css';
 
 
 export default class Home extends React.Component {
+
+   centerfoldData = this.props.centerfoldData;
+
    render() {
      return (<div className="home-page">
-              <Header />
+              <Header centerfoldData={this.centerfoldData}/>
              </div>);
    }
 }

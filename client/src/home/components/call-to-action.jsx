@@ -16,7 +16,7 @@ export default class CallToAction extends React.Component {
 
   render() {
     return (
-      <div className="call-to-action">
+      <div className="call-to-action button">
         <button
           type="button"
           className="call-to-action-button"

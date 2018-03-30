@@ -42,7 +42,7 @@ export default class App extends React.Component {
       return (
         <div className="index">
           <TopBar onPageChange={this.handlePageChange} topbarLinks={this.jsonModels.topbar} />
-          <Home centerfold-data={this.jsonModels.centerfold} />
+          <Home centerfoldData={this.jsonModels.centerfold} />
         </div>
       );
     } else if(this.state.page === "about") {
