@@ -1,6 +1,6 @@
 import React from 'react';
 import TopBar from './top-bar/topbar.js';
-import Header from './index/components/header-container.jsx';
+import Home from './home/home.js';
 
 import './App.css';
 
@@ -42,7 +42,7 @@ export default class App extends React.Component {
       return (
         <div className="index">
           <TopBar onPageChange={this.handlePageChange} topbarLinks={this.jsonModels.topbar} />
-          <Header centerfold-data={this.jsonModels.centerfold} />
+          <Home centerfold-data={this.jsonModels.centerfold} />
         </div>
       );
     } else if(this.state.page === "about") {
