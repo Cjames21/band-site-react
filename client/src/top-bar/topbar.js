@@ -6,13 +6,15 @@ import './topbar.css';
 export default class TopBar extends React.Component {
 
   navBarClicked(pageClicked, e) {
+    var lowerCasePageClicked = pageClicked.toLowerCase();
+    console.log(lowerCasePageClicked);
     this.props.onPageChange(pageClicked);
   }
 
 
   topbarArray = this.props.topbarLinks;
   listItems = this.topbarArray.map((link) =>
-    <li key={link}>
+    <li key={link} onClick={(e) => this.navBarClicked(link, e)} >
       {link}
     </li>
   );

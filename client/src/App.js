@@ -1,6 +1,7 @@
 import React from 'react';
 import TopBar from './top-bar/topbar.js';
 import Home from './home/home.js';
+import Error from './error-page/error-container.jsx';
 
 import './App.css';
 
@@ -24,10 +25,10 @@ export default class App extends React.Component {
   }
 
   handlePageChange(pageChosen) {
-    if(this.state.page === pageChosen) {
+    if(this.state.page === pageChosen.toLowerCase()) {
       return;
     }
-    sessionStorage.setItem("currentPage", pageChosen);
+    sessionStorage.setItem("currentPage", pageChosen.toLowerCase());
     this.setState({
       page: pageChosen,
     });
@@ -76,7 +77,12 @@ export default class App extends React.Component {
         </div>
       );
     } else {
-      return null;
+      return (
+        <div>
+          <TopBar onPageChange={this.handlePageChange} topbarLinks={this.jsonModels.topbar} />
+          <Error />
+        </div>
+      );
     }
   } // End of render
 } // End of Body class
