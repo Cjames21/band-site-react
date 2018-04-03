@@ -20,7 +20,7 @@ export default class App extends React.Component {
     if(currentPage) {
        this.state = {page: currentPage};
      } else {
-       this.state = {page: "index"}
+       this.state = {page: "home"}
     }
   }
 
@@ -39,7 +39,7 @@ export default class App extends React.Component {
   jsonModels = require('./json-models.json');
 
   render() {
-    if(this.state.page === "index") {
+    if(this.state.page === "home") {
       return (
         <div className="index">
           <TopBar onPageChange={this.handlePageChange} topbarLinks={this.jsonModels.topbar} />

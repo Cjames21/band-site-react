@@ -3,7 +3,7 @@ import React from 'react';
 import './topbar.css';
 
 
-export default class TopBar extends React.Component {
+export default class MobileTopBar extends React.Component {
 
   navBarClicked(pageClicked, e) {
     var lowerCasePageClicked = pageClicked.toLowerCase();
