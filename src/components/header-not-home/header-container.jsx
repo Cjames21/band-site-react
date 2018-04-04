@@ -3,9 +3,8 @@ import HeaderContent from './header-content.jsx';
 
 export default class HeaderContainer extends React.Component {
 
-
   render() {
-    return(
+    return (
       <div className="header-container">
         <HeaderContent />
       </div>

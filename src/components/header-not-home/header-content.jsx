@@ -2,9 +2,8 @@ import React from 'react';
 
 export default class HeaderContent extends React.Component {
 
-
   render() {
-    return(
+    return (
       <div className="header-content">
         Header content
       </div>
