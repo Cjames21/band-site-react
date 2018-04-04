@@ -1,0 +1,11 @@
+.header-container {
+  background-image: url('../../img/band-site-header.jpg');
+  background-size: cover;
+}
+
+@media screen and (max-width: 640px) {
+  .header-container {
+    background-image: url('../../img/band-site-header.jpg');
+    background-size: cover;
+  }
+}
