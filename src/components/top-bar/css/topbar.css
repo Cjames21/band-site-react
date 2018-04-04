@@ -1,0 +1,9 @@
+/* General styles for the topbar */
+/* I can't see very much going in here */
+body .topbar {
+  width: 100%;
+}
+
+.top-bar ul {
+  background-color: transparent;
+}

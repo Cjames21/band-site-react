@@ -1,0 +1,36 @@
+/* Top Bar Desktop styles */
+@media screen and (min-width: 641px) {
+  .mobile-topbar {
+    display: none;
+  }
+
+  .top-bar {
+    height: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  body .top-bar {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .top-bar li {
+      color: white;
+      padding: 10px;
+      text-align: center;
+      margin-right: 60px;
+      font-size: .9em;
+      font-weight: 500;
+      border: 1px solid transparent;
+      transition: border 1s;
+  }
+
+  .top-bar li:hover {
+      cursor: pointer;
+      border: 1px solid white;
+  }
+
+  .top-bar .top-bar-left:hover {
+    cursor: pointer;
+  }
+}

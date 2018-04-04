@@ -24,6 +24,8 @@ export default class App extends React.Component {
     }
   }
 
+  // TODO: Build a function that animates the body and mobile navigation menu
+
   handlePageChange(pageChosen) {
     if (this.state.page === pageChosen.toLowerCase()) {
       return;
@@ -41,44 +43,65 @@ export default class App extends React.Component {
     if (this.state.page === 'home') {
       return (
         <div className="index">
-          <TopBar onPageChange={this.handlePageChange} topbarLinks={this.jsonModels.topbar} />
+          <TopBar
+            onPageChange={this.handlePageChange}
+            topbarLinks={this.jsonModels.topbar}
+            bandName={this.jsonModels.band.title} />
           <Home centerfoldData={this.jsonModels.centerfold} />
         </div>
       );
     } else if (this.state.page === 'about') {
       return (
         <div className="index">
-          <TopBar onPageChange={this.handlePageChange} topbarLinks={this.jsonModels.topbar} />
+          <TopBar
+            onPageChange={this.handlePageChange}
+            topbarLinks={this.jsonModels.topbar}
+            bandName={this.jsonModels.band.title} />
         </div>
       );
     } else if (this.state.page === 'music') {
       return (
         <div className="index">
-          <TopBar onPageChange={this.handlePageChange} topbarLinks={this.jsonModels.topbar} />
+          <TopBar
+            onPageChange={this.handlePageChange}
+            topbarLinks={this.jsonModels.topbar}
+            bandName={this.jsonModels.band.title} />
         </div>
       );
     } else if (this.state.page === 'photos') {
       return (
         <div className="index">
-          <TopBar onPageChange={this.handlePageChange} topbarLinks={this.jsonModels.topbar} />
+          <TopBar
+            onPageChange={this.handlePageChange}
+            topbarLinks={this.jsonModels.topbar}
+            bandName={this.jsonModels.band.title} />
         </div>
       );
     } else if (this.state.page === 'store') {
       return (
         <div className="index">
-          <TopBar onPageChange={this.handlePageChange} topbarLinks={this.jsonModels.topbar} />
+          <TopBar
+            onPageChange={this.handlePageChange}
+            topbarLinks={this.jsonModels.topbar}
+            bandName={this.jsonModels.band.title} />
         </div>
       );
     } else if (this.state.page === 'contact') {
       return (
         <div className="index">
-          <TopBar onPageChange={this.handlePageChange} topbarLinks={this.jsonModels.topbar} />
+          <TopBar
+            onPageChange={this.handlePageChange}
+            topbarLinks={this.jsonModels.topbar}
+            bandName={this.jsonModels.band.title} />
         </div>
       );
     } else {
       return (
         <div>
-          <TopBar onPageChange={this.handlePageChange} topbarLinks={this.jsonModels.topbar} />
+          <TopBar
+            onPageChange={this.handlePageChange}
+            topbarLinks={this.jsonModels.topbar}
+            bandName={this.jsonModels.band.title} />
           <Error />
         </div>
       );
