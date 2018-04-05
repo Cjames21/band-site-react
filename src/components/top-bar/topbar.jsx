@@ -5,6 +5,7 @@ import MobileTopbar from './mobile-topbar.jsx';
 import './css/topbar.css';
 import './css/mobile-topbar.css';
 import './css/desktop-topbar.css';
+import './css/navigation-menu.css';
 
 export default class TopBar extends React.Component {
 
@@ -15,7 +16,7 @@ export default class TopBar extends React.Component {
     return (
       <div>
         <DesktopTopbar topbarLinks={ this.topbarLinks } />
-        <MobileTopbar bandName={this.props.bandName} />
+        <MobileTopbar topbarLinks={ this.topbarLinks } bandName={this.props.bandName} />
       </div>
     );
   }

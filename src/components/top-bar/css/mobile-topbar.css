@@ -2,4 +2,38 @@
   body .desktop-topbar {
     display: none;
   }
+
+  .mobile-topbar {
+    padding-top: 15px;
+    max-height: 70px;
+    background-color: #424242;
+    color: #fff;
+  }
+
+  .mobile-topbar .menu-button-container,
+  .mobile-topbar .band-title,
+  .mobile-topbar .cart-container {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .mobile-topbar .menu-button-container {
+    padding: 3px;
+    width: 2em;
+    font-size: 1.3em;
+  }
+
+  .mobile-topbar .band-title {
+    position: relative;
+    left: 5%;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .mobile-topbar .cart-container {
+    float: right;
+    padding: 8px;
+  }
 }

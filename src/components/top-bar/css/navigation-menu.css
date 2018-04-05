@@ -1,0 +1,25 @@
+body .mobile-nav-menu {
+  position: absolute;
+  float: left;
+  top: 65px;
+  right: 800px;
+  margin: 0;
+  width: 60%;
+  background-color: #6d6d6d;
+}
+
+.nav-list {
+  width: 100%;
+  display: block;
+}
+
+.nav-list li {
+  line-height: 2em;
+  display: block;
+  padding-left: 8px;
+  color: #fff;
+}
+
+.nav-list li:active {
+  background-color: #525252;
+}

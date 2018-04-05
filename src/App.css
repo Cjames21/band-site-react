@@ -1,2 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Cabin');
 @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond');
+
+
+body, body h1, body h2, body h3, body h4, body p, body button, body li {
+  font-family: 'Cabin', sans-serif;
+}
