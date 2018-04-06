@@ -3,6 +3,10 @@
     display: none;
   }
 
+  body .top-bar {
+    padding-left: 0 !important;
+  }
+
   .mobile-topbar {
     padding-top: 15px;
     max-height: 70px;

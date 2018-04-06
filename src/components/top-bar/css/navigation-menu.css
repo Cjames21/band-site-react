@@ -2,10 +2,18 @@ body .mobile-nav-menu {
   position: absolute;
   float: left;
   top: 65px;
-  right: 800px;
-  margin: 0;
   width: 60%;
   background-color: #6d6d6d;
+  transition: transform 300ms ease-in-out 50ms;
+  overflow-x: hidden;
+}
+
+body .show-nav-menu {
+  transform: translate(680px, 0px);
+}
+
+body .mobile-nav-menu {
+  margin-left: 0 !important;
 }
 
 .nav-list {

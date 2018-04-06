@@ -2,6 +2,13 @@ import React from 'react';
 
 export default class MobileTopBar extends React.Component {
 
+  constructor(props) {
+    super(props);
+    this.navMenuRef = React.createRef();
+  }
+
+  menuIsOpen = false;
+
   topbarArray = this.props.topbarLinks;
   listItems = this.topbarArray.map((link) =>
     <li key={link} onClick={(e) => this.navBarClicked(link, e)} >
@@ -9,10 +16,28 @@ export default class MobileTopBar extends React.Component {
     </li>
   );
 
-  toggleNavMenu() {
-    // TODO: Write animation function, call the function from nav li's
-    alert('Button Clicked!');
+  navBarClicked(link, e) {
+    alert('Nav bar clicked!');
     return;
+  }
+
+  toggleNavMenu() {
+    var element = document.getElementById('nav-menu');
+    var className = 'show-nav-menu';
+    if (!element) {
+      return;
+    }
+
+    var classString = element.className;
+    var nameIndex = classString.indexOf(className);
+    if (nameIndex === -1) {
+      classString += ' ' + className;
+    } else {
+      classString = classString.substr(0, nameIndex) +
+      classString.substr(nameIndex + className.length);
+    }
+
+    element.className = classString;
   }
 
   // NavBar will consist of img on the left side and the three navigation links on the right side.
@@ -36,7 +61,7 @@ export default class MobileTopBar extends React.Component {
             </button>
           </div>
 
-          <div className="mobile-nav-menu">
+          <div className="mobile-nav-menu expanded row" id="nav-menu">
             <ul className="nav-list vertical menu">
               { this.listItems }
             </ul>
