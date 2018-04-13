@@ -1,7 +1,6 @@
 import React from 'react';
 import CallToAction from './call-to-action.jsx';
 
-
 export default class HeaderCenterfold extends React.Component {
 
   centerfoldData = this.props.centerfoldData;
