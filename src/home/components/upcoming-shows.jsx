@@ -1,7 +1,7 @@
 import React from 'react';
-import ShowContainer from './show-container,jsx';
+import ShowContainer from './show-container.jsx';
 
-class UpcomingShows extends React.Component {
+export default class UpcomingShows extends React.Component {
 
   // This class is used exlusively on the home page and should therefore not
   // present more than four upcoming shows to the user. They can go to Tour
@@ -20,10 +20,10 @@ class UpcomingShows extends React.Component {
     return (
       <div className="row upcoming-shows">
         <h1>Upcoming Shows</h1>
-        <ShowContainer event={shows[0]} />
-        <ShowContainer event={shows[1]} />
-        <ShowContainer event={shows[2]} />
-        <ShowContainer event={shows[3]} />
+        <ShowContainer event={this.shows[0]} />
+        <ShowContainer event={this.shows[1]} />
+        <ShowContainer event={this.shows[2]} />
+        <ShowContainer event={this.shows[3]} />
       </div>
     );
   }

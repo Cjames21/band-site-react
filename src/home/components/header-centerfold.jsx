@@ -1,5 +1,5 @@
 import React from 'react';
-import CallToAction from './call-to-action.jsx';
+import CallToAction from '../../components/call-to-action/call-to-action.jsx';
 
 export default class HeaderCenterfold extends React.Component {
 

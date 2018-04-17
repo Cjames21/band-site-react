@@ -1,6 +1,7 @@
 import React from 'react';
 import TopBar from './components/top-bar/topbar.jsx';
 import Home from './home/home.js';
+import About from './about/about.jsx';
 import Error from './error-page/error-container.jsx';
 
 import './App.css';
@@ -57,6 +58,7 @@ export default class App extends React.Component {
             onPageChange={this.handlePageChange}
             topbarLinks={this.jsonModels.topbar}
             bandName={this.jsonModels.band.title} />
+          <About />
         </div>
       );
     } else if (this.state.page === 'music') {

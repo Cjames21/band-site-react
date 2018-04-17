@@ -15,8 +15,12 @@ export default class TopBar extends React.Component {
   render() {
     return (
       <div>
-        <DesktopTopbar topbarLinks={ this.topbarLinks } />
-        <MobileTopbar topbarLinks={ this.topbarLinks } bandName={this.props.bandName} />
+        <DesktopTopbar onPageChange={ this.props.onPageChange }
+                       topbarLinks={ this.topbarLinks } />
+                     
+        <MobileTopbar onPageChange={ this.props.onPageChange }
+                      topbarLinks={ this.topbarLinks }
+                      bandName={this.props.bandName} />
       </div>
     );
   }
