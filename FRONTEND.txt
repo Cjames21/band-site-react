@@ -1,0 +1,24 @@
+This is the project folder for the front end of this web project. As of right now,
+the files will only be updating in the front end branch of the git repo.
+
+The band site project is being built to allow for a modern, affordable option
+for local musicians looking to have their own web presence by providing an
+easily customizable template to put their band on.
+
+The MVP(Minimum Viable Product) will consist of the Home page, the About page,
+and the Music page. As the back end is not yet completed, there will be no commerce
+features until the appropriate code/tests are completed.
+
+The front end will be running on the following technologies:
+    - The usual front end stack(HTML5, CSS3, Javascript)
+    - Stripped down Foundation6 (only need foundation.min.css for the grid features,
+        as well as the topbar class)
+        ** PORT SITE TO CSS GRID, LESS FRAMEWORKS IS BETTER **
+    - React
+        - React allows for me to create amazing, feature rich web applications that
+          feel good to use. It comes with plenty of documentation, a great community,
+          and an endless supply of plugins if needed.
+        - React is being used for its powerful component based system, allowing
+          me to focus on fleshing out the custom parts of the website that much more.
+        - React uses the following dependencies:
+          - react, react-dom, react-scripts, webpack, babel(I think),
